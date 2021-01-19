@@ -2,7 +2,7 @@ public class Bank {
 
     private BankAccount[] accounts;
     private int numberOfAccounts = 5;
-
+//TODO: möjlighet att bryta ut upprepande kod. Ex println:s. Fel meddelanden.
 public Bank() {
     accounts = new BankAccount[5];
     numberOfAccounts = 0;
@@ -18,7 +18,6 @@ public int openNewAccount(String CustomerName, double openingBalance) {
     return Acc;
 }
 
-//TODO: rätt. Kan lägga till fel redan vid fel lösen.
 public void withdrawFrom(int accountNum, double amount) {
    for (int i =0; i<numberOfAccounts; i++) {
        int a = accounts[i].getAccountNum();
@@ -31,7 +30,7 @@ public void withdrawFrom(int accountNum, double amount) {
     }
     System.out.println("Account number not found.");
     }
-//TODO: denna är fel
+
 public void depositTo(int accountNumber, double amount) {
     for (int i = 0; i<numberOfAccounts; i++) {
         if (accountNumber == accounts[i].getAccountNum()) {
@@ -43,7 +42,7 @@ public void depositTo(int accountNumber, double amount) {
     }
     System.out.println("Account number not found.");
 } 
-//TODO: denna är fel
+
 public void printAccountInfo(int accountNumber, int n) {
     for (int i=0; i<numberOfAccounts; i++) {
         if(accountNumber == accounts[i].getAccountNum()) {
@@ -52,7 +51,7 @@ public void printAccountInfo(int accountNumber, int n) {
     }
     System.out.println("Account number not found.");
 }
-//TODO: denna är fel
+
 public void printAccountInfo(int accountNum) {
     for (int i =0; i<numberOfAccounts; i++) {
                 if (accountNum == accounts[i].getAccountNum()  ) {
