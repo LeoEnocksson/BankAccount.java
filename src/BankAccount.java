@@ -9,7 +9,7 @@ public class BankAccount {
     public String getAccountInfo() {
         return "Account number: " + accountNumber + "\nCustomer Name: " + customerName + "\nBalance:" + balance +"\n";
     }
-    //TODO: denna är fel, i konstruktorn måste man tilldela randomnummber
+    //TODO: Kan byta lösningen för denna. I konstruktorn kan man tilldela randomnummber
     public BankAccount(String name, double bal) {
         customerName = name;
         balance = bal;
