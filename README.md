@@ -1,2 +1,1 @@
-#init Commit
-- second commit
+Det här projektet är något jag har skapat vid sidan av studierna. Arbetet har varit iterativt där jag har landat i ett program som fungerar. Arbetet är däremot inte klart och många fler tillämpningar går att lägga till. Detta kan ni se i ex "TODO:s" som är spridda i filerna.
